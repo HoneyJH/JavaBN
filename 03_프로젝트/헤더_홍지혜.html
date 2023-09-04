@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.5rem;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .icon {
+            width: 30px;
+            height: 30px;
+        }
+
+        section {
+            height: 100vh;
+        }
+
+        /* font */
+        html {
+            font-size: 10px;
+            background: #fff;
+        }
+
+        body {
+            font-size: 1.5rem;
+        }
+
+        /* header */
+        header {
+            width: 100%;
+            z-index: 999;
+<<<<<<< HEAD
+            position: fixed;
+=======
+            /* transition: 0.3s; */
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+        }
+
+        .header {
+            max-width: 1920px;
+            display: flex;
+            margin: 0 auto;
+            height: 90px;
+            align-items: center;
+            text-align: center;
+            justify-content: space-between;
+        }
+
+        .header>.logo {
+            width: 300px;
+        }
+
+        .nav_bg1 {
+            position: absolute;
+            left: 0;
+            top: 90px;
+            width: 100%;
+            background: #F4F6F8;
+            z-index: 800;
+        }
+
+        .nav_bg2 {
+            position: absolute;
+            left: 0;
+            top: 90px;
+            width: 100%;
+            background: #24242448;
+            z-index: 700;
+        }
+
+        nav {
+            z-index: 999;
+        }
+
+        nav>.main {
+            display: flex;
+            height: 90px;
+        }
+
+        .main>li>a {
+            font-size: 1.8rem;
+            display: block;
+            height: 90px;
+            line-height: 90px;
+        }
+
+        .main>li:hover>a {
+            font-weight: 600;
+        }
+
+        .main>li {
+            width: 100px;
+        }
+
+        .sub {
+            display: none;
+        }
+
+        .sub li {
+            padding: 10px 0;
+        }
+
+        .search_user {
+            width: 500px;
+        }
+
+        .search_user>input {
+            font-size: 1.6rem;
+            padding-left: 5px;
+            height: 30px;
+            width: 270px;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid black;
+            outline: none;
+        }
+
+        .search_user>.searchBtn {
+            position: relative;
+            cursor: pointer;
+            width: 25px;
+            right: 35px;
+        }
+
+        .search_user>.user {
+            cursor: pointer;
+        }
+
+        /* section1 */
+        .section1 {
+            width: 100%;
+        }
+
+        .section1Box {
+            max-width: 1920px;
+            margin: 0 auto;
+        }
+
+        .section1>.bgColor {
+            z-index: -10;
+            background: #C0E4FF;
+            height: 700px;
+            width: 100%;
+            position: absolute;
+            transition: .3s;
+<<<<<<< HEAD
+=======
+        }
+
+        .section1>.cloud>.airplane {
+            position: absolute;
+            background: url(images/airplane.png) 50px/50px;
+            width: 50px;
+            height: 50px;
+            animation: airplane 15s infinite linear;
+        }
+
+
+        @keyframes airplane {
+            0% {
+                bottom: -50px;
+                left: -200px;
+            }
+            100% {
+                bottom: 300px;
+                left: 1000px;
+            }
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+        }
+
+        .section1>.cloud {
+            z-index: -10;
+            height: 700px;
+            max-width: 1920px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .section1>.cloud>img:nth-of-type(1) {
+            position: relative;
+            bottom: -450px;
+            left: 1500px;
+            height: 255px;
+            width: 375px;
+        }
+
+        .section1>.cloud>img:nth-of-type(2) {
+            position: relative;
+            bottom: -550px;
+            left: 440px;
+            height: 170px;
+            width: 250px;
+        }
+
+        .section1>.cloud>img:nth-of-type(3) {
+            position: relative;
+            bottom: -430px;
+            right: 700px;
+            height: 255px;
+            width: 375px;
+        }
+
+        .section1>.cloud>img:nth-of-type(4) {
+            position: relative;
+            bottom: -550px;
+            right: 1100px;
+            height: 170px;
+            width: 255px;
+        }
+
+        .section1>.cloud>img:nth-of-type(5) {
+            position: relative;
+            bottom: -150px;
+            right: 550px;
+            height: 90px;
+            width: 135px;
+        }
+
+        .section1>.cloud>img:nth-of-type(6) {
+            position: relative;
+            bottom: -280px;
+            right: 1100px;
+            height: 40px;
+            width: 60px;
+        }
+
+        .textBox {
+            display: block;
+            position: relative;
+            width: 380px;
+            bottom: 500px;
+            left: 400px;
+        }
+
+        .section1Box>.textBox>.text1 {
+<<<<<<< HEAD
+            display: inline-block;
+=======
+            position: absolute;
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+            padding: 6px;
+            background: rgb(41, 41, 41);
+            border: 1px solid rgb(41, 41, 41);
+            border-radius: 20px 20px 20px 0;
+            color: #eee;
+            transition: .3s;
+        }
+
+        .section1Box>.textBox>.text2 {
+            position: absolute;
+            top: 50px;
+            word-break: keep-all;
+            font-size: 4rem;
+            transition: .3s;
+        }
+
+        .textBox>p:nth-of-type(n+2):nth-of-type(-n+3),
+        .textBox>p:nth-of-type(n+5):nth-of-type(-n+6) {
+            opacity: 0;
+        }
+
+        .section1Box>.textBox>a {
+<<<<<<< HEAD
+            display: block;
+            margin-top: 20px;
+=======
+            position: absolute;
+            top: 180px;
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+            text-decoration: underline;
+        }
+
+        /* imgsilder */
+
+        .section1Box>.imgBox {
+            position: absolute;
+            left: 50%;
+            top: 100px;
+            height: 660px;
+            width: 760px;
+        }
+
+        .section1Box>.imgBox>img {
+            position: absolute;
+            z-index: 20;
+        }
+
+        .section1Box>.imgBox>ul>li {
+            height: 660px;
+            width: 740px;
+            position: absolute;
+        }
+
+        .slider {
+            display: flex;
+            position: absolute;
+        }
+
+        /* page */
+        .page {
+            position: relative;
+            display: flex;
+            width: 400px;
+<<<<<<< HEAD
+            bottom: 270px;
+=======
+            bottom: 50px;
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+            left: 400px;
+            align-items: center;
+        }
+
+        .progressBar {
+            height: 2px;
+            background: #b2b2b2;
+            width: 150px;
+        }
+
+        .progressBar>div {
+            height: 2px;
+            background: #1b1b1b;
+            width: 0;
+        }
+
+        @keyframes identifier {
+            0% {
+                width: 0;
+            }
+
+            100% {
+                width: 150px;
+            }
+        }
+
+        .pagination {
+            padding: 0 10px;
+        }
+
+        .pageBtn {
+            display: flex;
+            position: relative;
+            top: 2px;
+            left: 50px;
+        }
+
+        .pageBtn>.pageBtnPrev {
+            position: relative;
+            text-indent: -9999px;
+            width: 17px;
+            height: 16px;
+            background: url(images/btn_showcase_arw.png) no-repeat;
+            cursor: pointer;
+        }
+
+        .pageBtn>.pageBtnNext {
+            position: relative;
+            left: 47px;
+            text-indent: -9999px;
+            width: 17px;
+            height: 16px;
+            background: url(images/btn_showcase_arw.png) no-repeat 0 -16px;
+            cursor: pointer;
+        }
+
+        .btnAuto .btnAutoPlay {
+            position: absolute;
+            text-indent: -9999px;
+            width: 15px;
+            height: 17px;
+            background: url(images/btn_slide_play02.png) no-repeat;
+            vertical-align: top;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .btnAuto .btnAutoStop {
+            position: absolute;
+            text-indent: -9999px;
+            width: 15px;
+            height: 17px;
+            background: url(images/btn_slidem_stop02.png) no-repeat;
+            vertical-align: top;
+            border: none;
+            cursor: pointer;
+            display: none;
+        }
+
+        /* section... */
+        .section2 {
+            background: lightblue;
+            width: 100%;
+        }
+
+        .section2>div {
+            width: 1320px;
+            height: 800px;
+            margin: 0 auto;
+            background: #000;
+            z-index: 999;
+        }
+
+        .section3 {
+            background: lightcoral;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="logo"><a href="#">3조 프로젝트 로고</a></div>
+            <div class="nav_bg2"></div>
+            <div class="nav_bg1"></div>
+            <nav>
+                <ul class="main">
+                    <li><a href="#">홈</a>
+                    </li>
+                    <li><a href="#">테마</a>
+                        <ul class="sub">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                            <li><a href="#">서브메뉴3</a></li>
+                            <li><a href="#">서브메뉴4</a></li>
+                            <li><a href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">지역</a>
+                        <ul class="sub">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                            <li><a href="#">서브메뉴3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행콕콕</a>
+                        <ul class="sub">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                            <li><a href="#">서브메뉴3</a></li>
+                            <li><a href="#">서브메뉴4</a></li>
+                            <li><a href="#">서브메뉴5</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행상품</a>
+                        <ul class="sub">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행정보</a>
+                        <ul class="sub">
+                            <li><a href="#">서브메뉴1</a></li>
+                            <li><a href="#">서브메뉴2</a></li>
+                            <li><a href="#">서브메뉴3</a></li>
+                            <li><a href="#">서브메뉴4</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">여행지도</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="search_user">
+                <input class="searchInput" type="text" placeholder="어디로 여행을 떠날 예정인가요?">
+                <img class="searchBtn" src="images/btn_header_search.png" alt="">
+                <img class="icon user" src="images/icons8-user-64.png" alt="user">
+            </div>
+        </div>
+
+    </header>
+    <section class="section1">
+        <div class="bgColor"></div>
+        <div class="cloud">
+            <div class="airplane"></div>
+            <img src="images/cloud1.png" alt="">
+            <img src="images/cloud2.png" alt="">
+            <img src="images/cloud3.png" alt="">
+            <img src="images/cloud4.png" alt="">
+            <img src="images/cloud5.png" alt="">
+            <img src="images/cloud6.png" alt="">
+        </div>
+        <div class="section1Box">
+            <div class="textBox">
+                <p class="text1">여름 액티비티 여행</p>
+                <p class="text1">여름 꽃 여행</p>
+                <p class="text1">여행구독 서비스</p>
+
+                <p class="text2">다채롭게 자연을 즐기는 함안 여행</p>
+                <p class="text2">싱그러움 가득한 여름 꽃 명소</p>
+                <p class="text2">스트레스가 해소되는 여름 여행지</p>
+                <a href="#">자세히 보기</a>
+            </div>
+            <div class="imgBox">
+                <img src="images/Component.png" alt="">
+                <ul class="slider">
+                    <li><img src="images/image 48.png" alt=""></li>
+                    <li><img src="images/image 49.png" alt=""></li>
+                    <li><img src="images/image 50.png" alt=""></li>
+                </ul>
+            </div>
+            <div class="page">
+                <div class="progressBar">
+                    <div></div>
+                </div>
+                <div class="pagination">
+                    <span>1</span>
+                    /
+                    3
+                </div>
+                <div class="pageBtn">
+                    <div class="pageBtnPrev">이전</div>
+                    <div class="pageBtnNext">다음</div>
+                    <div class="btnAuto">
+                        <button class="btnAutoPlay">재생</button>
+                        <button class="btnAutoStop">멈춤</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section2">
+        <div></div>
+    </section>
+    <section class="section3">
+
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        // 내비게이션바
+
+
+
+        $('nav').mouseenter(function (e) {
+            e.preventDefault // a태그 기본 이벤트 제거
+            $('.sub').stop().slideDown();
+            $('.nav_bg1').stop().animate({ height: 210 }, 400);
+            $('header').css("background-color", "#fff");
+            $('.nav_bg2').css("height", "100vh");
+        });
+
+
+
+        $('.nav_bg1').mouseleave(function () {
+            $('.sub').stop().slideUp();
+
+            $('.nav_bg1').stop().animate({ height: 0 }, 400, function () {
+                $('header').css("background-color", "transparent");
+                $('.nav_bg2').css("height", "0");
+            });
+        });
+
+<<<<<<< HEAD
+        // slider & bgColor 
+=======
+        $(window).scroll(function () {
+            let st = $(this).scrollTop();
+            if (st > 0) {
+                $('header').css({
+                    background: '#fff',
+                    boxShadow: "0px 4px 10px 0px rgba(0,0,0,0.1)"
+                })
+            } else {
+                $('header').css({
+                    background: 'transparent',
+                    boxShadow: "none"
+                })
+            }
+        });
+
+
+        // slider
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+        const slider = $('.slider>li'),
+            prev = $('.pageBtnPrev'),
+            next = $('.pageBtnNext'),
+            btnAutoPlay = $('.btnAutoPlay'),
+<<<<<<< HEAD
+            btnAutoStop = $('.btnAutoStop');
+
+        let idx = 0,
+            bgColor = $('.bgColor'),
+            text1 = $('.text1'),
+            text2 = $('.text2');
+
+        const color = ["#FCEAEC", "#E3EFFF", "#FCF3E0"];
+        const innerText1 = ["여름 액티비티 여행",
+            "느긋한 해남 여행",
+            "여행구독 서비스"];
+        const innerText2 = ["다채롭게 자연을 즐기는 함안 여행",
+            "땅끝마을에서 시원하게 여름나기",
+            "스트레스가 해소되는 여름 여행지"];
+
+        // slider & bgColor_prev
+=======
+            btnAutoStop = $('.btnAutoStop'),
+            counter = $('.pagination span'),
+            progressBar = $('.progressBar div');
+
+        bgColor = ["#C0E4FF", "#FFF6E0", "#FCEAEC"],
+            text1 = $('.text1'),
+            text2 = $('.text2');
+
+        let idx = 0,
+            progressBarWith = 0,
+            autoBtn;
+
+        // btnAutoPlay 이벤트 강제 실행
+        $(document).ready(function () {
+            btnAutoPlay.trigger('click');
+        });
+
+        // slider - 공통부분
+        function allBtn() {
+            slider.eq(idx).fadeIn(300).siblings().fadeOut(300);
+            $('.bgColor').css("background-color", bgColor[idx]);
+
+            counter.text(idx + 1);
+
+            text1.eq(idx - 2).css("opacity", "0");
+            text1.eq(idx - 1).css("opacity", "0");
+            text1.eq(idx).css("opacity", "1");
+
+            text2.eq(idx - 2).css("opacity", "0");
+            text2.eq(idx - 1).css("opacity", "0");
+            text2.eq(idx).css("opacity", "1");
+        }
+
+        // slider - prev
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+        prev.click(function () {
+            fadeprev('prev');
+        });
+
+        function fadeprev(btn) {
+            if (btn === 'prev') {
+                idx--;
+                if (idx < 0) {
+                    idx = 2;
+                }
+<<<<<<< HEAD
+                slider.eq(idx).fadeIn(300).siblings().fadeOut(300);
+                bgColor.css("background", color[idx]);
+                text1.html(innerText1[idx]);
+                text2.html(innerText2[idx]);
+            }
+        }
+
+        // slider & bgColor_next
+=======
+                allBtn();
+                progressBarWith = 0;
+                progressBar.css({ width: 0 });
+            }
+        }
+
+        // slider - next
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+        next.click(function () {
+            fadenext('next');
+        });
+
+<<<<<<< HEAD
+        function fadenext(btn) {
+            if (btn === 'next') {
+                idx++;
+                if (idx > 2) {
+                    idx = 0;
+                }
+                slider.eq(idx).fadeIn(300).siblings().fadeOut(300);
+                bgColor.css("background", color[idx]);
+                text1.text(innerText1[idx]);
+                text2.text(innerText2[idx]);
+            }
+        }
+
+        let silde;
+        // slider & bgColor_AutoPlay
+        btnAutoPlay.click(function () {
+            silde = setInterval(autoPlay, 3000);
+            btnAutoPlay.css("display", "none");
+            btnAutoStop.css("display", "block");
+        });
+
+        function autoPlay(btn) {
+                console.log(1)
+                idx++;
+                if (idx > 2) {
+                    idx = 0;
+                }
+                slider.eq(idx).fadeIn(300).siblings().fadeOut(300);
+                bgColor.css("background", color[idx]);
+                text1.html(innerText1[idx]);
+                text2.html(innerText2[idx]);
+                
+        }
+
+        // slider & bgColor_AutoPlay
+        btnAutoStop.click(function () {
+            clearInterval(silde);
+=======
+        function fadenext() {
+            idx++;
+            if (idx > 2) {
+                idx = 0;
+            }
+            allBtn();
+            progressBarWith = 0;
+            progressBar.css({ width: 0 });
+        }
+
+        // slider - autoPlay
+        btnAutoPlay.click(function () {
+            progress = setInterval(bar, 30);
+            btnAutoPlay.css("display", "none");
+            btnAutoStop.css("display", "block");
+        });
+
+        function bar() {
+            if (progressBarWith == 150) {
+                progressBarWith = 0;
+                fadenext();
+            } else {
+                progressBarWith++;
+                progressBar.css({ width: progressBarWith });
+            }
+        }
+
+        // slider - autoPlay
+        btnAutoStop.click(function () {
+            clearInterval(progress);
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+            btnAutoPlay.css("display", "block");
+            btnAutoStop.css("display", "none");
+        });
+
+<<<<<<< HEAD
+
+=======
+>>>>>>> 111d23304737bc443b40c160b661ca634b826871
+    </script>
+</body>
+
+</html>
