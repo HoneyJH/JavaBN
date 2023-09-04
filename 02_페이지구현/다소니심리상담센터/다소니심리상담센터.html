@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 초기화 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        html{
+            font-size: 10px;
+        }
+
+        body{
+            font-size: 1.5rem;
+        }
+
+        /* header */
+        header {
+            width: 100%;
+            /* background: lightcyan; */
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        #logo {
+            width: 1000px;
+            margin: 0 auto;
+            height: 111px;
+            position: relative;
+        }
+        
+        #logo>a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* nav_main */
+        nav{
+            width: 100%;
+            background: url(images/다소니심리상담센터/header_line.png)
+            no-repeat center top;
+        }
+        
+        header nav:hover{
+            background: url(images/다소니심리상담센터/header_line.png)
+            no-repeat center top, url(images/다소니심리상담센터/header_line.png) no-repeat center bottom;
+        }
+
+        nav>.main{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+        }
+        nav>.main>li{
+            height: 50px;
+            width: 200px;
+            font-size: 1.65rem;
+            font-weight: 800;
+        }
+        nav>.main>li>a{
+            display: block;
+            line-height: 50px;
+        }
+        /* nav_sub */
+        nav .sub{
+            /* display: none; */
+            color: #000;
+            font-weight: 400;
+        }
+        nav .sub>li{
+            padding: 14px 10px;
+            /* background: lightcoral; */
+        }
+        nav .sub>li>a{
+            padding: 14px 10px;
+        }
+        nav .sub>li>a:hover{
+            font-weight: 800;
+            background: url(images/다소니심리상담센터/menu_hover.png) no-repeat 0% 50%;
+        }
+        
+        </style>
+</head>
+
+<body>
+    <header>
+        <div id="logo"><a href="#"><img src="images/다소니심리상담센터/dasoni_logo.png" alt=""></a></div>
+        <nav>
+            <div class="bg"></div>
+            <ul class="main">
+                <li>
+                    <a href="#">ABOUT 디소니</a>
+                    <ul class="sub">
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">오시는길</a></li>
+                        <li><a href="#">마음산책</a></li>
+                        <li><a href="#">후기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">상담진 소개</a>
+                    <ul class="sub">
+                        <li><a href="#">대표/슈퍼바이저</a></li>
+                        <li><a href="#">다소니 상담진</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">심리상담</a>
+                    <ul class="sub">
+                        <li><a href="#">성인심리상담</a></li>
+                        <li><a href="#">청소년/아동심리상당</a></li>
+                        <li><a href="#">부부상담</a></li>
+                        <li><a href="#">가족상담</a></li>
+                        <li><a href="#">심리상담 예약신청</a></li>
+                    </ul class="sub">
+                </li>
+                <li>
+                    <a href="#">심리검사</a>
+                    <ul class="sub">
+                        <li><a href="#">다소니전문심리검사</a></li>
+                        <li><a href="#">종합심리평가</a></li>
+                        <li><a href="#">신경심리평가</a></li>
+                        <li><a href="#">단일검사</a></li>
+                        <li><a href="#">심리검사 예약신청</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">관계테라피</a>
+                    <ul class="sub">
+                        <li><a href="#">부부관계테라피</a></li>
+                        <li><a href="#">가족관계테라피</a></li>
+                        <li><a href="#">커플관계테라피</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
