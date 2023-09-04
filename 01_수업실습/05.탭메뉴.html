@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        div {
+            margin: 100px auto;
+            width: 400px;
+            height: 300px;
+            border: 1px solid #333;
+        }
+
+        div>ul {
+            position: relative;
+            display: flex;
+        }
+
+        div>ul>li {
+            background: #ddd;
+            width: 150px;
+            text-align: center;
+            height: 40px;
+            line-height: 40px;
+        }
+
+        div>ul>li>ul {
+            position: absolute;
+            left: 20px;
+            padding: 20px;
+            display: none;
+        }
+
+        div>ul>li>ul>li {
+            list-style: disc;
+        }
+
+        div>ul>li>ul>li:hover {
+            text-decoration: underline 1px;
+            text-underline-offset : 3px;
+        }
+
+        div>ul>li.on>ul {
+            display: block;
+        }
+
+        div>ul>li.on {
+            background: lightcoral;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li class="mu on"><a href="#">메뉴1</a>
+                <ul>
+                    <li><a href="#">메뉴1의 알림입니다.</a></li>
+                    <li><a href="#">메뉴1의 알림입니다.</a></li>
+                    <li><a href="#">메뉴1의 알림입니다.</a></li>
+                    <li><a href="#">메뉴1의 알림입니다.</a></li>
+                    <li><a href="#">메뉴1의 알림입니다.</a></li>
+                </ul>
+            </li>
+            <li class="mu"><a href="#">메뉴2</a>
+                <ul>
+                    <li><a href="#">메뉴2의 건의사항입니다.</a></li>
+                    <li><a href="#">메뉴2의 건의사항입니다.</a></li>
+                    <li><a href="#">메뉴2의 건의사항입니다.</a></li>
+                    <li><a href="#">메뉴2의 건의사항입니다.</a></li>
+                    <li><a href="#">메뉴2의 건의사항입니다.</a></li>
+                </ul>
+            </li>
+            <li class="mu"><a href="#">메뉴3</a>
+                <ul>
+                    <li><a href="#">메뉴3의 공지입니다.</a></li>
+                    <li><a href="#">메뉴3의 공지입니다.</a></li>
+                    <li><a href="#">메뉴3의 공지입니다.</a></li>
+                    <li><a href="#">메뉴3의 공지입니다.</a></li>
+                    <li><a href="#">메뉴3의 공지입니다.</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script>
+        let pic = $('.mu');
+        pic.click(function () {
+            $(this).addClass("on");
+            pic.not(this).removeClass("on");
+        });
+
+    </script>
+</body>
+
+</html>
