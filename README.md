@@ -20,7 +20,7 @@ ing main(void) {
 
 http://www.naver.com
 
-[재웅이의집](http://blog.naver.com/bhher)
+[지혜의 집](http://blog.naver.com/bhher)
 
 * 깃 듀토리얼
   * 깃 Clone
